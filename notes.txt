@@ -1,0 +1,26 @@
+- How to make your TensorFlow model work for a web application
+To make recommendations from our application we need to serve out the model. 
+To do this we will be using Tensorflow Serving. This an extensión of Tensorflow that allows to run our model using HTTP requests. 
+This is done using the Docker image for Tensorflow Serving, we will be going over this over the Docker part of the tutorial.
+
+
+- Matrix Factorization
+Decomposes the user-game interaction matrix into lower-dimensional representations.
+Helps uncover hidden patterns (e.g., underlying preferences).
+Algorithms include:
+    - Singular Value Decomposition (SVD) – Used in Netflix’s recommendation system. (THIS IS THE ONE WE USED IN THIS PROJECT)
+    - Alternating Least Squares (ALS) – Used in large-scale recommendations.
+    - Non-negative Matrix Factorization (NMF) – Useful when the data is sparse.
+
+- Neural Collaborative Filtering
+Uses deep learning to predict user-game interactions.
+Example: Neural Matrix Factorization (NeuMF) combines Generalized Matrix Factorization (GMF) with deep neural networks.
+Framework: TensorFlow Recommenders (TFRS) supports deep learning-based collaborative filtering. (I DON'T WANT TO USE TENSERFLOW RECOMMENDERS)
+Some potential examples of this are these: 
+    - https://github.com/recommenders-team/recommenders/blob/main/examples/00_quick_start/ncf_movielens.ipynb
+    - https://github.com/jdortuzar5/movie-recommender/blob/master/ai-model/collaborative_recom_train.py
+    - https://github.com/amitkaps/recommendation/blob/master/MovieLens/12-Model-Neural-CF.ipynb
+    - https://github.com/recommenders-team/recommenders/blob/main/examples/02_model_collaborative_filtering/ncf_deep_dive.ipynb (VERY DETAILED)
+Videos:
+    - https://www.youtube.com/watch?v=O4lk9Lw7lS0
+
