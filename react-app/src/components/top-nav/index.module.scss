@@ -1,0 +1,38 @@
+.topNavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #282c34;
+  .logoLink {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    .logoText {
+      margin-left: 10px;
+    }
+  }
+  .navLinks {
+    display: flex;
+    gap: 20px;
+    .navLink {
+      color: #61dafb;
+      text-decoration: none;
+      font-size: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .modelSelect {
+      font-size: 1rem;
+      .modelSelectInput {
+        background-color: white;
+        color: #000;
+        border-radius: 0.5rem;
+        padding: 0;
+      }
+    }
+  }
+}

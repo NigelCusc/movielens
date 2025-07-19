@@ -363,6 +363,13 @@ class NCF:
         )
         self.sess.run(assign_op)
 
+    def set_dict(self, data):
+        # get user and item mapping dict
+        self.user2id = data.user2id
+        self.item2id = data.item2id
+        self.id2user = data.id2user
+        self.id2item = data.id2item
+
     def fit(self, data):
         """Fit model with training data
 

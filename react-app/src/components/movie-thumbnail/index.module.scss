@@ -1,0 +1,31 @@
+.movieThumbnail {
+  max-width: 10rem;
+  margin: 1rem;
+
+  .movieThumbnailLink {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .movieThumbnailImage {
+    height: 10rem;
+    object-fit: cover;
+  }
+  .movieTitle {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .movieOverview {
+    font-size: 0.6rem;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Adjust number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .movieDetails {
+    font-size: 0.6rem;
+    color: #666;
+    margin-top: 8px;
+  }
+}

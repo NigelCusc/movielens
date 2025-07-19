@@ -1,0 +1,1 @@
+export const models = ['knn', 'ncf'] as const;
